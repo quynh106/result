@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Result Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f7f9fc;
+        font-family: "Arial", sans-serif;
+      }
+      .card {
+        border: none;
+        border-radius: 15px;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+      .card-header {
+        background: linear-gradient(135deg, #007bff, #00d4ff);
+        color: white;
+        border-radius: 15px 15px 0 0;
+        padding: 1rem 1.5rem;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .card-body {
+        padding: 1.5rem;
+      }
+      .list-group-item {
+        border: none;
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+      }
+      .list-group-item a {
+        text-decoration: none;
+        color: #007bff;
+        font-weight: bold;
+      }
+      .list-group-item a:hover {
+        text-decoration: underline;
+      }
+      .progress-bar {
+        background: linear-gradient(90deg, #28a745, #85e085);
+      }
+      a {
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container py-5">
+      <!-- Header -->
+      <div class="text-center mb-3">
+        <h1 class="fw-bold text-primary">My Result</h1>
+      </div>
+
+      <!-- Những việc đã làm -->
+      <div class="card mb-4">
+        <div class="card-header">
+          <i class="bi bi-check-circle-fill"></i> Những gì đã làm/học được
+        </div>
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item">
+              <a
+                href="https://nhatquan-2005.github.io/hci2025group12/group-diary.html"
+                >Group diary</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://nhatquan-2005.github.io/hci2024group12/nhap-diem.html"
+                >Nhập điểm</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://nhatquan-2005.github.io/hci2024group12/diem-sv.html"
+                >Xem điểm</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://nhatquan-2005.github.io/hci2024group12/phuc-khao.html"
+                >Phúc khảo</a
+              >
+            </li>
+            <li class="list-group-item">
+              <a
+                href="https://nhatquan-2005.github.io/hci2024group12/hoi-dap-hoc-tap.html"
+                >Hỏi đáp học tập</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Đánh giá bản thân -->
+      <div class="card">
+        <div class="card-header">
+          <i class="bi bi-person-circle"></i> Đánh giá bản thân
+        </div>
+        <div class="card-body">
+          <p class="mb-3">
+            Tự đánh giá tỷ lệ đóng góp của bản thân trong nhóm:
+            <strong>30%</strong>
+          </p>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              style="width: 30%"
+              aria-valuenow="30"
+              aria-valuemin="0"
+              aria-valuemax="100"
+            >
+              30%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+  </body>
+</html>
